@@ -8,7 +8,7 @@ const events: Event[] = [
     description: 'An evening of classical music under the stars.',
     longDescription:
       'Join us for the Starlight Symphony, a magical night where classical music meets the cosmos. Featuring world-renowned conductors and a full orchestra, this open-air concert will transport you to another dimension. Blankets and picnics are encouraged.',
-    imageUrl: 'https://placehold.co/600x400/4c1d95/ffffff.png',
+    imageUrl: '/images/events/starlight-symphony.jpg',
     imageHint: 'symphony orchestra',
     date: '2024-08-15T20:00:00Z',
     location: 'Central Park, New York',
@@ -23,7 +23,7 @@ const events: Event[] = [
     description: 'A two-day summit for tech enthusiasts and professionals.',
     longDescription:
       'The Innovate & Inspire Tech Summit is the premier event for developers, entrepreneurs, and tech leaders. With keynotes from industry giants, hands-on workshops, and networking opportunities, you will leave with the knowledge and connections to shape the future.',
-    imageUrl: 'https://placehold.co/600x400/2563eb/ffffff.png',
+    imageUrl: '/images/events/tech-summit.jpg',
     imageHint: 'tech conference',
     date: '2024-09-20T09:00:00Z',
     location: 'Moscone Center, San Francisco',
@@ -38,7 +38,7 @@ const events: Event[] = [
     description: 'Experience a culinary journey with top chefs.',
     longDescription:
       'The Gourmet Gala brings together the brightest stars of the culinary world for an unforgettable tasting experience. Sample signature dishes, attend live cooking demonstrations, and savor exquisite wine pairings in a luxurious setting.',
-    imageUrl: 'https://placehold.co/600x400/b91c1c/ffffff.png',
+    imageUrl: '/images/events/gourmet-gala.jpg',
     imageHint: 'gourmet food',
     date: '2024-10-05T18:00:00Z',
     location: 'The Grand Ballroom, Chicago',
@@ -53,7 +53,7 @@ const events: Event[] = [
     description: 'A mind-bending journey through modern abstract art.',
     longDescription:
       'Explore the boundaries of perception at the Abstract Dimensions Art Exhibit. This curated collection features groundbreaking works from international artists, challenging form, color, and texture. An immersive experience for art lovers and curious minds alike.',
-    imageUrl: 'https://placehold.co/600x400/db2777/ffffff.png',
+    imageUrl: '/images/events/abstract-art.jpg',
     imageHint: 'abstract art',
     date: '2024-11-01T10:00:00Z',
     location: 'Modern Art Museum, Los Angeles',
@@ -68,7 +68,7 @@ const events: Event[] = [
     description: 'Discover the next generation of filmmakers.',
     longDescription:
       'Our annual Indie Film Festival showcases a diverse lineup of feature films, shorts, and documentaries from independent creators around the globe. Participate in Q&A sessions with directors, attend workshops, and vote for the audience choice award.',
-    imageUrl: 'https://placehold.co/600x400/4b5563/ffffff.png',
+    imageUrl: '/images/events/indie-film-festival.jpg',
     imageHint: 'film festival',
     date: '2024-11-12T13:00:00Z',
     location: 'The Indie Theater, Austin',
@@ -83,7 +83,7 @@ const events: Event[] = [
     description: 'A weekend of cutting-edge electronic music.',
     longDescription:
       'Experience the pulse of tomorrow at Future Beats, a festival dedicated to the latest in electronic music. With a lineup of innovative DJs and live acts, stunning visuals, and an electrifying atmosphere, this is the ultimate destination for dance music fans.',
-    imageUrl: 'https://placehold.co/600x400/a3e635/000000.png',
+    imageUrl: '/images/events/future-beats.jpg',
     imageHint: 'music festival',
     date: '2024-09-28T16:00:00Z',
     location: 'Digital Dreams Park, Miami',
@@ -98,7 +98,7 @@ const events: Event[] = [
     description: 'A night of laughter with the galaxy\'s funniest comedians.',
     longDescription:
       'Prepare for liftoff into a universe of humor at the Cosmic Comedy Fest. Featuring a stellar lineup of stand-up comedians, improv troupes, and sketch artists, this event promises non-stop laughs that are out of this world.',
-    imageUrl: 'https://placehold.co/600x400/f59e0b/000000.png',
+    imageUrl: '/images/events/comedy-fest.jpg',
     imageHint: 'stand-up comedian stage',
     date: '2024-10-19T20:00:00Z',
     location: 'Galaxy Theater, Houston',
@@ -113,7 +113,7 @@ const events: Event[] = [
     description: 'Run through the heart of the city in our annual marathon.',
     longDescription:
       'Lace up your running shoes for the Cityscape Marathon 2024. Whether you\'re a seasoned runner or a first-timer, this course takes you past iconic landmarks and cheering crowds. Join thousands of others in this celebration of fitness and community spirit.',
-    imageUrl: 'https://placehold.co/600x400/10b981/ffffff.png',
+    imageUrl: '/images/events/cityscape-marathon.jpg',
     imageHint: 'city marathon runners',
     date: '2024-11-03T07:00:00Z',
     location: 'Downtown Plaza, Chicago',
@@ -128,7 +128,7 @@ const events: Event[] = [
     description: 'A day of peace, meditation, and rejuvenating yoga.',
     longDescription:
       'Escape the hustle and bustle at our Zen Garden Yoga Retreat. Guided by expert instructors, you will flow through rejuvenating yoga sessions, practice mindfulness meditation, and find your inner peace amidst a serene and beautiful garden setting.',
-    imageUrl: 'https://placehold.co/600x400/84cc16/ffffff.png',
+    imageUrl: '/images/events/zen-garden-yoga.jpg',
     imageHint: 'serene yoga retreat',
     date: '2024-09-14T09:30:00Z',
     location: 'Tranquil Gardens, Portland',
@@ -143,7 +143,7 @@ const events: Event[] = [
     description: 'Step back in time to an age of knights and dragons.',
     longDescription:
       'Hark, noble traveler! The Medieval Kingdom Faire awaits. Witness thrilling jousting tournaments, browse artisan crafts, feast on rustic fare, and be enchanted by minstrels and magicians. A grand day out for the entire family!',
-    imageUrl: 'https://placehold.co/600x400/78716c/ffffff.png',
+    imageUrl: '/images/events/medieval-kingdom-faire.jpg',
     imageHint: 'medieval jousting festival',
     date: '2024-08-24T11:00:00Z',
     location: 'Castlewood Park, Boston',

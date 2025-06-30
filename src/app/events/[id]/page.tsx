@@ -1,4 +1,4 @@
-import { getEventByIdWithImage, getEvents } from '@/lib/events';
+import { getEventById, getEvents } from '@/lib/events';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { format } from 'date-fns';
@@ -13,8 +13,8 @@ interface EventPageProps {
   };
 }
 
-export default async function EventPage({ params }: EventPageProps) {
-  const event = await getEventByIdWithImage(params.id);
+export default function EventPage({ params }: EventPageProps) {
+  const event = getEventById(params.id);
   const allEvents = getEvents();
 
   if (!event) {

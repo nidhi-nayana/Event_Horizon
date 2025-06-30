@@ -1,8 +1,8 @@
-import { getEventsWithImages } from '@/lib/events';
+import { getEvents } from '@/lib/events';
 import EventCard from '@/components/EventCard';
 
-export default async function Home() {
-  const events = await getEventsWithImages();
+export default function Home() {
+  const events = getEvents();
 
   return (
     <div className="container mx-auto px-4 py-8">

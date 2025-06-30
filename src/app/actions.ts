@@ -3,7 +3,6 @@
 import { z } from 'zod';
 import type { Event } from '@/lib/types';
 import { generateEventRecommendations } from '@/ai/flows/event-recommendation';
-import { generateImage } from '@/ai/flows/image-generator';
 
 const bookTicketsSchema = z.object({
   ticketType: z.string(),
@@ -56,21 +55,8 @@ export async function getRecommendationsAction(
       recommendedTitles.some(title => event.title.toLowerCase().includes(title.toLowerCase()))
     ).slice(0, 3);
     
-    // Now, generate images for the recommended events.
-    const recommendedEventsWithImages = await Promise.all(
-      recommendedEventsRaw.map(async (event) => {
-        try {
-          const result = await generateImage({ prompt: event.imageHint });
-          return { ...event, imageUrl: result.imageUrl };
-        } catch (error) {
-          console.error(`Failed to generate image for recommended event ${event.id}:`, error);
-          // Fallback to the original placeholder image if generation fails
-          return event;
-        }
-      })
-    );
-
-    return recommendedEventsWithImages;
+    // Return the recommended events as is, without generating images
+    return recommendedEventsRaw;
   } catch (error) {
     console.error('Error getting recommendations from AI:', error);
     return [];

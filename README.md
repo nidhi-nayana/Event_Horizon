@@ -147,3 +147,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Made with ❤️ by \[Your Name]
 GitHub: [@yourhandle](https://github.com/yourhandle)
 Email: [your@email.com](mailto:your@email.com)
+
+## Event Images
+
+Event images are stored in the `public/images/events` directory. Each event should have an image placed in this folder, and the `imageUrl` in `src/lib/events.ts` should reference the image as `/images/events/<filename>`. For example:
+```
+imageUrl: '/images/events/starlight-symphony.jpg',
+```
